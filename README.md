@@ -54,12 +54,12 @@ This is a solution to the [Huddle Landing Page challenge on Frontend Mentor](htt
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/sedaryildirim/huddle-landing-page-main .svg?style=for-the-badge
-[contributors-url]: https://github.com/sedaryildirim/huddle-landing-page-main /graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/sedaryildirim/huddle-landing-page-main .svg?style=for-the-badge
-[forks-url]: https://github.com/sedaryildirim/huddle-landing-page-main /network/members
-[stars-shield]: https://img.shields.io/github/stars/sedaryildirim/huddle-landing-page-main .svg?style=for-the-badge
-[stars-url]: https://github.com/sedaryildirim/huddle-landing-page-main /stargazers
-[license-shield]: https://img.shields.io/github/license/sedaryildirim/huddle-landing-page-main .svg?style=for-the-badge
-[license-url]: https://github.com/sedaryildirim/huddle-landing-page-main /blob/main/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/sedaryildirim/huddle-landing-page-main.svg?style=for-the-badge
+[contributors-url]: https://github.com/sedaryildirim/huddle-landing-page-main/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/sedaryildirim/huddle-landing-page-main.svg?style=for-the-badge
+[forks-url]: https://github.com/sedaryildirim/huddle-landing-page-main/network/members
+[stars-shield]: https://img.shields.io/github/stars/sedaryildirim/huddle-landing-page-main.svg?style=for-the-badge
+[stars-url]: https://github.com/sedaryildirim/huddle-landing-page-main/stargazers
+[license-shield]: https://img.shields.io/github/license/sedaryildirim/huddle-landing-page-main.svg?style=for-the-badge
+[license-url]: https://github.com/sedaryildirim/huddle-landing-page-main/blob/main/LICENSE.txt
 [product-screenshot]: imgs/screenshot.png
