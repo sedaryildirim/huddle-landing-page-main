@@ -15,11 +15,11 @@
 This is a solution to the [Huddle Landing Page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0/hub).
 
   <p align="center">   
-    <a href="https://sedaryildirim.github.io/huddle-landing-page-main /">View Site</a>
+    <a href="https://sedaryildirim.github.io/huddle-landing-page-main/">View Site</a>
     ·
-    <a href="https://github.com/sedaryildirim/huddle-landing-page-main /issues">Report Bug</a>
+    <a href="https://github.com/sedaryildirim/huddle-landing-page-main/issues">Report Bug</a>
     ·
-    <a href="https://github.com/sedaryildirim/huddle-landing-page-main /issues">Request Feature</a>
+    <a href="https://github.com/sedaryildirim/huddle-landing-page-main/issues">Request Feature</a>
   </p>
 </div>
 
@@ -34,8 +34,8 @@ This is a solution to the [Huddle Landing Page challenge on Frontend Mentor](htt
 
 ## Links
 
-- Solution URL: [Add solution URL here](https://github.com/sedaryildirim/huddle-landing-page-main )
-- Live Site URL: [Add live site URL here](https://sedaryildirim.github.io/huddle-landing-page-main /)
+- Solution URL: [Add solution URL here](https://github.com/sedaryildirim/huddle-landing-page-main/)
+- Live Site URL: [Add live site URL here](https://sedaryildirim.github.io/huddle-landing-page-main/)
 
 ## Built with
 
