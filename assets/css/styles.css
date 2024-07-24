@@ -1,29 +1,16 @@
 /* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Open+Sans:wght@400&display=swap');
 
 :root {
     /* Colors */
-    /* Primary */
-    --light-red: hsl(0, 100%, 67%);
-    --orange-yellow: hsl(39, 100%, 56%);
-    --green-teal: hsl(166, 100%, 37%);
-    --cobalt-blue: hsl(234, 85%, 45%);
-    /* Neutral */
-    --white: hsl(0, 0%, 100%);
-    --pale-blue: hsl(221, 100%, 96%);
-    --light-lavender: hsl(241, 100%, 89%);
-    --dark-gray-blue: hsl(224, 30%, 27%);
-    /* Gradients */
-    --light-slate-blue-bg: hsl(252, 100%, 67%);
-    --light-royal-blue-bg: hsl(241, 81%, 54%);
-    --violet-blue-circle: hsla(256, 72%, 46%, 1);
-    --persian-blue-circle: hsla(241, 72%, 46%, 0);
+    --violet: hsl(257, 40%, 49%);
+    --magenta: hsl(300, 69%, 71%);  
     /* Typography */
-    --font-size-paragraph: 18px;
+    --heading-font: "Poppins", sans-serif;
+    --body-font: "Open Sans", sans-serif;
     /* Font weights */
-    --font-weight-regular: 500;
-    --font-weight-bold: 700;
-    --font-weight-extra-bold: 800;
+    --font-weight-regular: 400;
+    --font-weight-bold: 600;
 }
 
 /* Reset */
@@ -35,27 +22,102 @@
 
 /* Body */
 body {
-    font-family: "Hanken Grotesk", sans-serif;
-    font-size: 13px;
-    line-height: 1.5;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     padding: 24px;
+    background-color: var(--violet);
+    background-image: url(../images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    color: white;
+    font-family: var(--body-font);
+    font-size: 14px;
+    text-align: center;
+}
+
+.container {
+    max-width: 375px;
+    margin: 0 auto;
+}
+
+.container > img {
+    max-width: 100%;
+    margin-bottom: 3rem;
+}
+
+.logo {
+    width: 150px;
+    margin: 16px;
+    align-self: flex-start;
+}
+
+h1, p {
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-family: var(--heading-font);
+    font-size: 1.75rem;
+    font-weight: var(--font-weight-bold);
+}
+
+p {
+    font-size: 1rem;
+    font-weight: var(--font-weight-regular);
+    margin-bottom: 2rem;
+}
+
+.button {
+    background-color: white;
+    border: none;
+    border-radius: 2rem;
+    color: var(--violet);
+    cursor: pointer;
+    font-family: var(--body-font);
+    font-size: 1rem;
+    padding: 0.925rem 2rem;
+    margin-bottom: 2rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+    background-color: var(--magenta);
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.socials {
+    margin-top: 2rem;
+}
+
+.fa-brands {
+    margin: 0.5rem;
+    font-size: 1.5rem;
+    color: white;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.fa-brands:hover {
+    color: var(--magenta);
 }
 
 /* Attribution */
 .attribution {
     font-size: 11px;
+    margin-top: 3rem;
     text-align: center;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 10px 0;
 }
+
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: white;
+    text-decoration: none;
+}
+
+.attribution a:hover {
+    text-decoration: underline;
 }
