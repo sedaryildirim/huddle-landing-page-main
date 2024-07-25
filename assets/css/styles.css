@@ -89,6 +89,7 @@ p {
     font-weight: var(--font-weight-regular);
     transition: all 0.3s ease;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
 }
 
 .button:hover {
@@ -173,13 +174,25 @@ footer {
     }
     footer {
         display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .socials {
+        width: 100%;
+        justify-content: flex-end;
+        margin-bottom: 1rem;
+      }
+    
+      .attribution {
+        width: 100%;
+        text-align: center;
+      }
     }
     .socials {
         margin-bottom: 0;
     }
-}
+
 
 @media screen and (min-width: 1200px) {
     .main-container {
@@ -226,7 +239,19 @@ footer {
         height: 3rem;
     }
     
-    .attribution {
-        font-size: 12px;
-    }
+    footer {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .socials {
+        width: 100%;
+        justify-content: flex-end;
+        margin-bottom: 1rem;
+      }
+    
+      .attribution {
+        width: 100%;
+        text-align: center;
+      }
 }
