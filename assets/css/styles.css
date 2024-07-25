@@ -22,94 +22,111 @@
 
 /* Body */
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     min-height: 100vh;
-    padding: 24px;
     background-color: var(--violet);
     background-image: url(../images/bg-mobile.svg);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     color: white;
     font-family: var(--body-font);
-    font-size: 14px;
-    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
-.container {
-    max-width: 375px;
+.main-container {
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-.container > img {
-    max-width: 100%;
+header {
     margin-bottom: 3rem;
 }
 
 .logo {
-    width: 150px;
-    margin: 16px;
-    align-self: flex-start;
+    width: 120px;
 }
 
-h1, p {
-    margin-bottom: 1rem;
+.container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.illustration img {
+    max-width: 100%;
+    height: auto;
+}
+
+.content {
+    text-align: center;
 }
 
 h1 {
     font-family: var(--heading-font);
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     font-weight: var(--font-weight-bold);
+    margin-bottom: 1rem;
 }
 
 p {
-    font-size: 1rem;
-    font-weight: var(--font-weight-regular);
     margin-bottom: 2rem;
 }
 
 .button {
+    display: inline-block;
     background-color: white;
-    border: none;
-    border-radius: 2rem;
     color: var(--violet);
-    cursor: pointer;
-    font-family: var(--body-font);
-    font-size: 1rem;
-    padding: 0.925rem 2rem;
-    margin-bottom: 2rem;
+    text-decoration: none;
+    padding: 0.75rem 4rem;
+    border-radius: 2rem;
+    font-family: var(--heading-font);
+    font-weight: var(--font-weight-regular);
     transition: all 0.3s ease;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .button:hover {
     background-color: var(--magenta);
     color: white;
-    transform: translateY(-3px);
-    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    margin-top: 3rem;
 }
 
 .socials {
-    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
 }
 
-.fa-brands {
-    margin: 0.5rem;
-    font-size: 1.5rem;
+.socials a {
     color: white;
-    transition: color 0.3s ease;
-    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
 }
 
-.fa-brands:hover {
+.socials a:hover {
     color: var(--magenta);
+    border-color: var(--magenta);
 }
 
-/* Attribution */
 .attribution {
     font-size: 11px;
-    margin-top: 3rem;
     text-align: center;
 }
 
@@ -120,4 +137,96 @@ p {
 
 .attribution a:hover {
     text-decoration: underline;
+}
+
+/* Your existing CSS code here */
+
+@media screen and (min-width: 768px) {
+    body {
+        background-image: url(../images/bg-desktop.svg);
+    }
+    .main-container {
+        padding: 3rem;
+    }
+    .logo {
+        width: 200px;
+    }
+    .socials {
+        display: flex;
+        justify-content: right;
+        margin-top: 5rem;
+    }
+    .container {
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+    }
+    .illustration {
+        flex: 1;
+    }
+    .content {
+        flex: 1;
+        text-align: left;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    .socials {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .main-container {
+        padding: 4rem;
+    }
+    
+    .logo {
+        width: 220px;
+    }
+    
+    .container {
+        gap: 4rem;
+    }
+    
+    .illustration {
+        flex: 1.2;
+    }
+    
+    .content {
+        flex: 1;
+    }
+    
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    p {
+        font-size: 1.125rem;
+        margin-bottom: 2.5rem;
+    }
+    
+    .button {
+        padding: 1rem 5rem;
+        font-size: 1.125rem;
+    }
+    
+    .socials {
+        margin-top: 7rem;
+    }
+    
+    .socials a {
+        width: 3rem;
+        height: 3rem;
+    }
+    
+    .attribution {
+        font-size: 12px;
+    }
 }
